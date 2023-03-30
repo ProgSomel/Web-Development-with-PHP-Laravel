@@ -1,0 +1,19 @@
+<?php
+$fruits = array( 'apple', 'banana', 'orange', 'plum', 'dates', 'mango' );
+
+$random = array(
+    'a' => 12, 'b' => 45, 'c' => 34, 'd' => 22, 'e' => 77, 'f' => 33, 12 => 83, 'g' => 91,
+);
+
+//! Original Array Soho Change hoe jabe for Splice
+//! But in Slice original Array will not change
+//$someFruits = array_splice( $fruits, 2, 2 );
+print_r( $someFruits );
+print_r( $fruits );
+//? Adding New Fruits on Splice space
+$newFruits = array('jackfruit', 'Coconut');
+$someFruits = array_splice( $fruits, 2, 2, $newFruits );
+
+print_r( $someFruits );
+print_r( $fruits );
+
