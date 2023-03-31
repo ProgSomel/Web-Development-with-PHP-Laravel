@@ -1,0 +1,16 @@
+<?php
+abstract class OurClass {
+    function syaHi() {
+        echo "Hi";
+    }
+    abstract function eat($v1);//? We can not use any identifier to this abstract function
+}
+class MyClass extends OurClass {
+     function eat($v1) { //? We can not use any identifier to this  function. Should keep this as it is
+        echo "Hello";
+
+
+    }
+}
+$mc = new MyClass();
+$mc->eat($v1);
